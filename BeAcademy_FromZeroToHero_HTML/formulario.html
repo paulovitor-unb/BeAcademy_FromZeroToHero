@@ -1,0 +1,253 @@
+<!-- Formulário (tag form)
+    action (destino no Back-end, segundo a regra de negócio)
+    method (padrão: GET)
+
+    Block content
+-->
+<form action="" method="post">
+    <fieldset name="contato">
+        <legend>Preencha o formulário de contato</legend>
+    </fieldset>
+
+    <!-- Tag button -->
+    <button type="submit">Enviar</button>
+</form>
+
+<hr />
+
+<form action="" method="post">
+    <fieldset>
+        <legend>Label e Datalist</legend>
+
+        <!-- Tag label
+            Associar e identificar uma ou mais entrada de dados
+            Ajuda na acessibilidade
+            Atributos
+                for
+                    Usado para fazer conexão com outros tipos de elementos de formulário
+        -->
+        <label>
+            Nome:
+            <input type="text" />
+        </label>
+        <br />
+
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" />
+        <br /><br />
+
+        <!-- Tag datalist
+            Lista de valores com sugestões para um elemento de entrada de dados
+            Usuário pode selecionar um dos valores na lista ou entrar um outro valor
+        -->
+        <datalist id="lista-professores">
+            <option value="Luan">Luan</option>
+            <option value="Jenifer">Jenifer</option>
+            <option value="Regis">Regis</option>
+        </datalist>
+        <input
+            type="text"
+            list="lista-professores"
+            placeholder="Escolha seu professor"
+        />
+    </fieldset>
+</form>
+
+<hr />
+
+<form action="" method="post" enctype="multipart/form-data">
+    <fieldset>
+        <legend>Trabalhando com inputs</legend>
+
+        <!-- Input type="text" -->
+        <input
+            type="text"
+            placeholder="Preencha seu nome"
+            size="24"
+            minlength="3"
+            maxlength="20"
+            title="Campo obrigatório"
+            required
+        />
+        <br />
+
+        <!-- Input type="number" -->
+        <input
+            type="number"
+            placeholder="Preencha sua idade"
+            min="1"
+            max="50"
+            title="Preencha o dado"
+            style="width: 10rem"
+        />
+        <br />
+
+        <!-- Input type="email" -->
+        <input
+            type="email"
+            placeholder="Preencha seu email"
+            title="Preencha o dado"
+        />
+        <br />
+
+        <!-- Input type="password" -->
+        <input
+            type="password"
+            placeholder="Preencha sua senha"
+            title="Sua senha precisa ser em hexadecimal (0-9, A-F ou a-f)"
+            pattern="[0-9A-Fa-f]{8,16}"
+            inputmode="numeric"
+            required
+        />
+        <br />
+
+        <!-- Input type="hidden" -->
+        <input type="hidden" value="Valor escondido" />
+        <br />
+
+        <!-- Input type="color" -->
+        <input type="color" />
+        <br />
+
+        <!-- Input type="date" -->
+        <input type="date" />
+        <!-- Input type="time" -->
+        <input type="time" />
+        <!-- Input type="datetime-local" -->
+        <input type="datetime-local" />
+        <!-- Input type="month" -->
+        <input type="month" />
+        <!-- Input type="week" -->
+        <input type="week" />
+        <br />
+
+        <!-- Input type="checkbox" -->
+        <label>Interessado por qual área?</label>
+        <input
+            type="checkbox"
+            name="interesses"
+            id="interesses-0"
+            value="Front-end"
+            checked
+        />
+        <label for="interesses-0">Front-end</label>
+
+        <input
+            type="checkbox"
+            name="interesses"
+            id="interesses-1"
+            value="Back-end"
+        />
+        <label for="interesses-1">Back-end</label>
+
+        <input
+            type="checkbox"
+            name="interesses"
+            id="interesses-2"
+            value="Design UI/UX"
+        />
+        <label for="interesses-2">Design UI/UX</label>
+        <br />
+
+        <!-- Input type="radio" -->
+        <label>Deseja receber notificação da Be Academy?</label>
+        <input
+            type="radio"
+            name="notificacao"
+            id="notificacao-on"
+            value="true"
+            checked
+        />
+        <label for="notificacao-on">Sim</label>
+
+        <input
+            type="radio"
+            name="notificacao"
+            id="notificacao-off"
+            value="false"
+        />
+        <label for="notificacao-off">Não</label>
+        <br />
+
+        <!-- Tag select
+            Elemento de formulário para criar um lista de opções a serem selecionadas
+            Drop-down / Lista suspensa
+        -->
+        <label for="professores">Professores:</label>
+        <select name="select-professores" id="professores" multiple size="3">
+            <option value="">Selecione professores</option>
+            <option value="Luan Santos">Luan Santos</option>
+            <option value="Moacir Garcia">Moacir Garcia</option>
+            <option value="Jenifer Vieira">Jenifer Vieira</option>
+            <option value="Regis Eduardo">Regis Eduardo</option>
+        </select>
+        <br />
+
+        <!-- Input type="search" -->
+        <label for="busca-id-usuario">id:</label>
+        <input
+            type="search"
+            id="busca-id-usuario"
+            placeholder="Buscar id"
+            size="10"
+            pattern="[0-9]{1,3}"
+            title="Buscar usuário pelo id de até 3 dígitos[0-9]"
+        />
+        <br />
+
+        <!-- Input type="file"
+            Usuário pode fazer upload de 1 ou mais arquivos de acordo com a extensão
+            Atributos
+                multiple: permite upload de mais de 1 arquivo
+                accept: define extensões de arquivo aceitas
+            Formulário precisa do atributo enctype="multipart/form-data"
+        -->
+        <input type="file" accept="image/*" multiple />
+        <br />
+
+        <button type="submit">Enviar</button>
+    </fieldset>
+</form>
+
+<hr />
+
+<form action="" method="post">
+    <fieldset>
+        <legend>Textarea e Optgroup</legend>
+        <!-- Tag textarea
+            Elemento de texto com mais de uma linha
+            Muito utilizado em textos maiores
+        -->
+        <textarea
+            name="mensagem"
+            id="mensagem"
+            cols="20"
+            rows="8"
+            minlength="10"
+            maxlength="100"
+            wrap="soft"
+        ></textarea>
+
+        <br />
+
+        <!-- Tag optgroup
+            Elemento utilizado para agruparuma sequência de opções ou seleções
+        -->
+        <label for="conteudos">Selecione o conteúdo desejado:</label>
+        <select name="conteudos" id="conteudos" size="5" multiple>
+            <optgroup label="Professores">
+                <option value="Luan" disabled>Luan</option>
+                <option value="Regis">Regis</option>
+                <option value="Jenifer">Jenifer</option>
+                <option value="Moacir">Moacir</option>
+            </optgroup>
+            <optgroup label="Cursos">
+                <option value="Front-end">Front-end</option>
+                <option value="Back-end">Back-end</option>
+                <option value="Design UI/UX">Design UI/UX</option>
+                <option value="DevOps">DevOps</option>
+            </optgroup>
+        </select>
+        <br />
+    </fieldset>
+</form>
