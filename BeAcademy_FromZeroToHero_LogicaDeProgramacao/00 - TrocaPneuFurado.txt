@@ -1,0 +1,23 @@
+Algoritmo para troca de pneu furado
+
+- Abrir porta-malas do carro
+- Pegar triângulo
+- Sinalizar a via com triângulo
+- Pegar estepe, macaco e chave de roda no porta-malas
+- Afrouxar parafusos do pneu furado com a chave de roda
+- Colocar macaco embaixo do carro na marca próxima ao pneu furado
+- Levantar o carro usando o macaco
+- Retirar os parafusos do pneu furado com a chave de roda
+- Tirar calota do pneu furado
+- Tirar roda com pneu furado
+- Colocar roda com estepe no lugar da roda com pneu furado
+- Colocar calota do estepe
+- Colocar os parafusos no estepe com a chave de roda sem apertar ainda
+- Abaixar o carro até o chão com o macaco
+- Apertar os parafusos do estepe com a chave de roda
+- Retirar o macaco debaixo do carro
+- Guardar pneu furado, macaco e chave de roda no porta-malas
+- Buscar triângulo na via
+- Guardar triângulo
+- Fechar porta-malas do carro
+- Sair com o carro e ir até uma borracharia para arrumar o pneu furado
