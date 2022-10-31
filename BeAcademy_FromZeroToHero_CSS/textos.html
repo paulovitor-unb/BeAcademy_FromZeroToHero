@@ -1,0 +1,77 @@
+<!-- Trabalhando com textos
+    Tipografia:
+        Tamanho
+        Estilo
+        Força
+
+    Básico de propriedades de fonte
+        font-family - Tipo de fonte do elemento, padrão Sans-serif
+        font-weight - Peso da fonte, 400, 500, 700, bold
+        font-style - normal, italic, oblique, none
+        font-size - tamanho da fonte, px, em, rem, %
+        font-variant - normal, small-caps
+        font-stretch - Nem todas as fonts dão suporte a está propriedade. Permite manipular caracteres - condensed, normal, expanded
+
+        letter-spacing: espaçamento entre letras
+        word-spacing: espaçamento de palavras
+        line-height: Espaço entre linhas (pode ser por unidade ou sem unidade)
+        text-transform: lowercase(minúsculas), uppercase(maiúsculas), capitalize(cada palavra inicia com letra maiúscula)
+        text-decoration: line, underline, overline, line-through, none
+            atribuindo estilos - text-decoration: underline, wave, dashed, dotted, double e também cores
+        text-align: center, left, right, justify
+        text-shadow: 1px 1px 1px red offset-x offset-y blur e cor
+
+        shorthand: italic normal bold normal 3em/1.5 Helvetica, Arial, sans—serif
+                    style variant weight stretch size/line—height family
+
+    Webfonts:
+        @import
+        @font—face
+        tag link
+        Ex: https://fonts.google.com
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Trabalhando com Fontes</title>
+
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;700&display=swap");
+
+            h1 {
+                /*
+                    color: red;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-weight: normal;
+                    font-style: italic;
+                    font-stretch: condensed;
+                    letter-spacing: 1.2rem;
+                    word-spacing: 4rem;
+                    text-transform: uppercase;
+                    text-decoration: underline wavy #0022ff;
+                    text-align: justify;
+                    text-shadow: 12px 20px 20px;
+                    font: normal 100 4rem/1.2rem "Inter", sans—serif;
+                */
+                font-family: "Inter", sans-serif;
+                font-weight: 300;
+                color: black;
+                -webkit-font-smoothing: antialiased;
+            }
+
+            h2 {
+                line-height: 4rem;
+                color: blue;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Testando Fontes</h1>
+        <h2>Outro teste de fonte</h2>
+    </body>
+</html>

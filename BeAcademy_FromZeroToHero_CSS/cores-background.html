@@ -1,0 +1,101 @@
+<!-- Trabalhando com cores
+    Onde posso mudar cores no CSS?
+        background-color (Para caixas)
+        color (Para Textos)
+        border-color (para bordas de caixas)
+        entre outros
+
+    Quais são os valores para atribuir ?
+        palavras (blue, red, white, transparent)
+        valores em hexadecimal (#fff321)
+        Funções: rgb, hsl, rgba, hsla
+
+    Anatomia:
+        Hexadecimal (0-9 e A-F)
+            #FF0000(2 primeiros digitos RED)
+            #00FF00(Próximos 2 digitos GREEN)
+            #0000FF(2 últimos digitos BLUE) 
+
+        RGB (red, green, blue - 0 a 255)
+            rgb(255,0,0) (red)
+            rgb(0,255,0) (green)
+            rgb(0,0,255) (blue)
+
+        RGBA (a -> Opacidade - 0 a 1)
+            rgba(255,0,0,0.3) (red)
+            rgba(0,255,0,0.3) (green)
+            rgba(0,0,255,0.3) (blue)
+
+        HSL (hue, saturation, lightness)
+            hue -> Define um grau de cores (de 0 a 360)
+                0 ou 360 é vermelho, 120 é verde, 240 é azul
+            saturation -> Define a saturação (de 0% a 100%)
+                0% é um tom de cinza e 100% é a cor total (saturação total)
+            lightness —> Define a leveza (de 0% a 100%)
+                0% é preto, 50% é normal e 100% é branco
+
+            hsl(0,100%,50%) - Vermelho normal
+            hsl(0,100%,75%) - Vermelho claro
+            hsl(0,100%,25%) - Vermelho escuro
+            hsl(0,40%,70%) - Vermelho pastel
+
+        HSLA (hue, saturation, lightness, alpha)
+            alpha -> Define a opacidade (de 0 a 1)
+                0.0 é totalmente transparente e 1.0 é totalmente opaco
+
+            hsla(0,100%,50%,0.3) - Vermelho normal com opacidade
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Background ans Color</title>
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: 0;
+            }
+
+            .bg-box {
+                width: 600px;
+                height: 400px;
+                border: 8px dotted #000; /* border shorthand */
+
+                background-color: #ff12ff;
+                padding: 16px;
+
+                /* Imagem de fundo */
+                background-image: url("https://source.unsplash.com/random");
+                background-size: 20%;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-origin: content-box;
+                background: radial-gradient(
+                    rgba(0, 90, 0, 1),
+                    rgba(0, 90, 0, 0.5)
+                );
+                /* background-attachment: fixed; */
+
+                /* Super combo - shorthand */
+                background: linear-gradient(
+                        rgba(0, 90, 0, 1),
+                        rgba(0, 90, 0, 0.1)
+                    ),
+                    url("https://source.unsplash.com/random") no-repeat center
+                        center / 50% content-box;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="bg-box"></div>
+            <h1>Testando backgrounds</h1>
+        </div>
+    </body>
+</html>

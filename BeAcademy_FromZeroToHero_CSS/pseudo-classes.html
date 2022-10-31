@@ -1,0 +1,91 @@
+<!-- PSEUDO—CLASSES
+    Uma pseudo—classe CSS é uma palavra—chave adicionada a seletores que especifica um estado especial do elemento selecionado. Por exemplo, :hover pode ser usado para alterar a cor de um botão quando o usuário passar o cursor sobre ele.
+
+    Documentação: https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-classes
+
+    Selecionando elementos com pseudo-classes
+        :first-child
+        :nth—of—type()
+        :nth-child()
+        :nth-child(even)
+        :nth-child(odd)
+
+    Ações do usuário
+        :hover - Quando o usuário passa o cursos pro cima do elemento
+        :focus - Quando o usuário da um foco no elemento
+
+    Atributos - Podemos utilizar melhor em formulários
+        :disabled
+        :required
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Pseudo Classes</title>
+
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+
+    <body>
+        <!--
+            <ul>
+                <li>Luan Monteiro</li>
+                <li>Jenifer Vieira</li>
+                <li>Moacir Santos</li>
+                <li>Regis Eduardo</li>
+            </ul>
+        -->
+        <!--
+            <h1>Testando nth-of-type</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
+                dicta! Eveniet sapiente ipsum suscipit maiores. Quos, vero quasi
+                nihil optio ut cupiditate sequi iusto facere nemo eligendi cum.
+                Modi, voluptatum.
+            </p>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni
+                architecto consequuntur consectetur nisi quasi eveniet provident
+                rerum dolores voluptatem accusamus. Delectus atque fuga maiores quae
+                dolor similique aliquam quos? Inventore.
+            </p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+                sed officiis libero quaerat ab numquam, autem molestias molestiae
+                obcaecati laboriosam quibusdam qui repellat, cupiditate nihil!
+                Tempora praesentium alias consequuntur vitae.
+            </p>
+        -->
+        <!--
+            <ul>
+                <li>Marcador 1</li>
+                <li>Marcador 2</li>
+                <li>Marcador 3</li>
+                <li>Marcador 4</li>
+            </ul>
+        -->
+
+        <form>
+            <input
+                type="text"
+                name="number1"
+                id="number1"
+                placeholder="Insira o número 1"
+                disabled
+            />
+            <br />
+            <input
+                type="text"
+                name="number2"
+                id="number2"
+                placeholder="Insira o número 2"
+            />
+            <br /><br />
+            <button class="btn-submit">Enviar</button>
+        </form>
+    </body>
+</html>
