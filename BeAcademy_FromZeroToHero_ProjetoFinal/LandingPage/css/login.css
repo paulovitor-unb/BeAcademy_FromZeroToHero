@@ -1,0 +1,213 @@
+:root {
+    --color-darker: rgb(15, 13, 23);
+    --color-dark: rgb(25, 22, 34);
+    --color-darkish: rgb(49, 47, 60);
+    --color-lighter: rgb(240, 242, 232);
+
+    --color-primary: hsl(181, 60%, 51%);
+    --color-success: hsl(153, 90%, 56%);
+    --color-alert: hsl(350, 79%, 58%);
+
+    --background-gradient: linear-gradient(
+        135deg,
+        var(--color-darker),
+        var(--color-darkish),
+        var(--color-dark)
+    );
+
+    --transition-time: 0.3s linear;
+
+    font-size: 62.5%;
+}
+
+/* Estilos no padrão "mobile-first" */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    color: var(--color-lighter);
+}
+*::selection {
+    background: var(--color-lighter);
+    color: var(--color-darker);
+}
+
+body,
+main,
+#brand {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    padding: 3.2rem;
+    background: var(--color-darker);
+}
+
+main,
+#brand {
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+#brand * {
+    text-align: center;
+    line-height: 1;
+}
+
+#brand-icon img {
+    height: 7rem;
+}
+
+#brand-name {
+    font-size: 3.2rem;
+}
+
+#brand-name span {
+    font-size: inherit;
+    color: var(--color-primary);
+}
+
+form {
+    padding: 2.4rem 3.2rem;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-dark);
+    border: 1px solid var(--color-darkish);
+    border-radius: 0.6rem;
+}
+
+#alert-block {
+    height: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--color-alert);
+    border: 1px solid transparent;
+    border-radius: 0.6rem;
+    transform: scaleY(0);
+    transform-origin: center top;
+    transition: var(--transition-time);
+}
+#alert-block.alert {
+    margin-bottom: 1.6rem;
+    padding: 0.6rem 1.2rem;
+    height: 100%;
+    transform: scaleY(1);
+}
+
+#alert-block * {
+    font-weight: bold;
+    color: var(--color-darker);
+}
+
+.form-group {
+    margin-bottom: 1.6rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input {
+    padding: 0.6rem 1.2rem;
+    background: var(--color-darker);
+    border: 1px solid var(--color-lighter);
+    border-radius: 0.6rem;
+}
+.form-input:focus-visible {
+    outline: var(--color-primary) solid 2px;
+    border: 1px solid var(--color-primary);
+}
+
+.collapse {
+    margin-bottom: 0;
+    height: 0;
+    transform: scaleY(0);
+    transform-origin: center top;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition-time);
+}
+.collapse.show {
+    margin-bottom: 1.6rem;
+    height: fit-content;
+    transform: scaleY(1);
+    opacity: 1;
+    visibility: visible;
+}
+
+#show-password {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8rem;
+    cursor: pointer;
+}
+
+.button {
+    padding: 0.6rem 1.2rem;
+    display: block;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: var(--transition-time);
+}
+.button:active {
+    transform: scale(0.9);
+    transform-origin: center center;
+}
+
+.button.fill {
+    background: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    font-weight: bold;
+    color: var(--color-dark);
+}
+.button.fill:hover,
+.button.fill:active,
+.button.fill:focus-visible {
+    background: var(--color-success);
+    border: 1px solid var(--color-success);
+}
+
+footer {
+    padding: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    border: 1px solid var(--color-lighter);
+    border-radius: 0.6rem;
+}
+
+#switch-form-button {
+    background: transparent;
+    border: none;
+    color: var(--color-primary);
+    cursor: pointer;
+}
+#switch-form-button:hover,
+#switch-form-button:active,
+#switch-form-button:focus-visible {
+    text-decoration: underline;
+}
+
+/* Media query para tablet */
+@media (min-width: 768px) {
+    body {
+        width: max-content;
+        min-width: 100vw;
+        height: max-content;
+        min-height: 100vh;
+    }
+}
+
+/* Media query para dispositivos com ferramenta de clique preciso (ex: mouse) */
+@media (pointer: fine) {
+    #show-password-icon:hover,
+    #show-password-icon:active,
+    #show-password-icon:focus-visible {
+        color: var(--color-primary);
+    }
+}

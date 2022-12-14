@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Meta tags -->
+        <meta name="author" content="Paulo Vitor dos Santos" />
+        <meta name="title" content="merCarrin" />
+        <meta
+            name="description"
+            content="Com o merCarrin, você faz suas listas de compras de forma fácil, rápida e prática"
+        />
+        <meta
+            name="keywords"
+            content="mercados,compras,orçamento,preços,inflação,economia,listas,gráficos"
+        />
+        <meta name="og:title" content="merCarrin" />
+        <meta name="og:image" content="./assets/icons/png/shopping-cart.png" />
+        <meta
+            name="og:description"
+            content="Com o merCarrin, você faz suas listas de compras de forma fácil, rápida e prática"
+        />
+
+        <!-- Título e Favicon da página -->
+        <title>merCarrin - Index</title>
+        <link rel="shortcut icon" href="./assets/icons/ico/favicon.ico" />
+
+        <!-- Arquivo CSS -->
+        <link rel="stylesheet" href="./css/index.css" />
+
+        <!-- Arquivo JavaScript -->
+        <script defer src="./js/index.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <div id="brand">
+                    <figure id="brand-icon">
+                        <img
+                            src="./assets/icons/png/shopping-cart.png"
+                            alt="Ícone de carrinho"
+                        />
+                    </figure>
+                    <h2 id="brand-name">mer<span>Carrin</span></h2>
+
+                    <!-- Botão para abrir barra de navegação (mobile) -->
+                    <button id="nav-button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+
+                <nav>
+                    <ul id="nav-bar">
+                        <!-- Links para seções da página -->
+                        <li>
+                            <a href="#home-section" class="section-link">
+                                Início
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#resources-section" class="section-link">
+                                Recursos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact-section" class="section-link">
+                                Contato
+                            </a>
+                        </li>
+
+                        <!-- Links para tela de login/cadastro -->
+                        <li>
+                            <a
+                                href="./login.html"
+                                class="login-link button outline"
+                            >
+                                Entrar
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="./login.html"
+                                class="login-link button fill"
+                            >
+                                Cadastrar-se
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Conteúdo principal da página -->
+        <main>
+            <section id="home-section">
+                <div class="container">
+                    <article id="title-article">
+                        <div class="article-textbox">
+                            <h1 class="article-title">
+                                mer<span>Carrin</span>, o facilitador das suas
+                                compras
+                            </h1>
+                            <p>
+                                Com o mer<span>Carrin</span>, você faz suas
+                                listas de compras de forma <span>fácil</span>,
+                                <span>rápida</span> e <span>prática</span>!
+                            </p>
+                        </div>
+
+                        <figure class="article-image" id="main-logo">
+                            <img
+                                src="./assets/icons/png/shopping-cart.png"
+                                alt="Ícone de carrinho"
+                            />
+                        </figure>
+                    </article>
+
+                    <article class="simple-article">
+                        <figure class="article-image">
+                            <img
+                                src="./assets/imgs/innovation-technology.png"
+                                alt="Inovação"
+                            />
+                        </figure>
+
+                        <div class="article-textbox">
+                            <h2 class="article-title">
+                                <span>Inove</span> sua forma de comprar
+                            </h2>
+                            <p>
+                                Monte sua <span>lista</span>, compare
+                                <span>preços de mercados</span>, acompanhe a
+                                <span>inflação</span> dos produtos que você mais
+                                usa. Com mer<span>Carrin</span> ir ao
+                                supermercado é uma experiência.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="resources-section">
+                <div class="container">
+                    <article id="table-article">
+                        <div class="article-textbox">
+                            <h2 class="article-title">
+                                Chega de fazer <span>listas de compras</span> no
+                                papel
+                            </h2>
+                            <p>
+                                Com o mer<span>Carrin</span> você tem acesso a
+                                listas completamente editáveis e
+                                <span>automatizadas</span> das suas compras.
+                            </p>
+                        </div>
+
+                        <table id="shopping-table">
+                            <thead>
+                                <tr>
+                                    <th>Total: R$ 500,00</th>
+                                    <th colspan="2">Estoque</th>
+                                    <th colspan="3">Compras</th>
+                                    <th class="show-lg" colspan="3">
+                                        Meses anteriores
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>Produto</th>
+                                    <th>Meta</th>
+                                    <th>Atual</th>
+                                    <th>Comprar</th>
+                                    <th>Unidade</th>
+                                    <th>Total</th>
+                                    <th class="show-lg">1 mês</th>
+                                    <th class="show-lg">2 meses</th>
+                                    <th class="show-lg">3 meses</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Sabonete</td>
+                                    <td>20</td>
+                                    <td>13</td>
+                                    <td>7</td>
+                                    <td>R$ 1,39</td>
+                                    <td>R$ 9,73</td>
+                                    <td class="show-lg">R$ 1,59</td>
+                                    <td class="show-lg">R$ 1,59</td>
+                                    <td class="show-lg">R$ 1,29</td>
+                                </tr>
+                                <tr>
+                                    <td>Papel higiênico</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>R$ 8,99</td>
+                                    <td>R$ 8,99</td>
+                                    <td class="show-lg">R$ 12,49</td>
+                                    <td class="show-lg">R$ 12,49</td>
+                                    <td class="show-lg">R$ 13,99</td>
+                                </tr>
+                                <tr>
+                                    <td>Detergente</td>
+                                    <td>6</td>
+                                    <td>2</td>
+                                    <td>4</td>
+                                    <td>R$ 1,99</td>
+                                    <td>R$ 7,96</td>
+                                    <td class="show-lg">R$ 2,19</td>
+                                    <td class="show-lg">R$ 1,99</td>
+                                    <td class="show-lg">R$ 2,97</td>
+                                </tr>
+                                <tr>
+                                    <td>Sabão em pó</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>2</td>
+                                    <td>R$ 23,90</td>
+                                    <td>R$ 47,80</td>
+                                    <td class="show-lg">R$ 25,90</td>
+                                    <td class="show-lg">R$ 25,90</td>
+                                    <td class="show-lg">R$ 21,90</td>
+                                </tr>
+                                <tr>
+                                    <td>Arroz</td>
+                                    <td>3</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>R$ 9,99</td>
+                                    <td>R$ 19,98</td>
+                                    <td class="show-lg">R$ 9,99</td>
+                                    <td class="show-lg">R$ 9,99</td>
+                                    <td class="show-lg">R$ 9,49</td>
+                                </tr>
+                                <tr>
+                                    <td>Feijão</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>R$ 5,99</td>
+                                    <td>R$ 5,99</td>
+                                    <td class="show-lg">R$ 6,99</td>
+                                    <td class="show-lg">R$ 6,99</td>
+                                    <td class="show-lg">R$ 6,99</td>
+                                </tr>
+                                <tr>
+                                    <td>Macarrão</td>
+                                    <td>3</td>
+                                    <td>0</td>
+                                    <td>3</td>
+                                    <td>R$ 3,45</td>
+                                    <td>R$ 10,36</td>
+                                    <td class="show-lg">R$ 3,19</td>
+                                    <td class="show-lg">R$ 3,19</td>
+                                    <td class="show-lg">R$ 3,29</td>
+                                </tr>
+                                <tr>
+                                    <td>&vellip;</td>
+                                    <td>&vellip;</td>
+                                    <td>&vellip;</td>
+                                    <td>&vellip;</td>
+                                    <td>&vellip;</td>
+                                    <td>&vellip;</td>
+                                    <td class="show-lg">&vellip;</td>
+                                    <td class="show-lg">&vellip;</td>
+                                    <td class="show-lg">&vellip;</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </article>
+
+                    <article class="simple-article">
+                        <figure class="article-image">
+                            <img
+                                src="./assets/imgs/employee-performance.png"
+                                alt="Gráfico"
+                            />
+                        </figure>
+
+                        <div class="article-textbox">
+                            <h2 class="article-title">
+                                Use os <span>gráficos</span> a seu favor
+                            </h2>
+                            <p>
+                                Os diversos tipos de gráficos irão te ajudar a
+                                identificar <span>queda</span> ou
+                                <span>aumento</span> de preços de produtos nos
+                                mercados.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article id="maps-article">
+                        <div class="article-textbox">
+                            <h2 class="article-title">
+                                Compare os <span>preços</span> dos mercados
+                                <span>próximos a você</span>
+                            </h2>
+                            <p>
+                                Para isso, utilize o sistema de
+                                <span>busca pelo CEP</span>. É simples e
+                                prático. Inclusive em viagens.
+                            </p>
+                        </div>
+
+                        <div id="local-stores">
+                            <form id="cep-form">
+                                <input
+                                    type="text"
+                                    class="form-input"
+                                    id="cep"
+                                    pattern="\d{5}-\d{3}"
+                                    maxlength="9"
+                                    placeholder="CEP"
+                                />
+                                <input
+                                    type="submit"
+                                    class="button fill"
+                                    id="cep-search-button"
+                                    value="Buscar"
+                                />
+                            </form>
+                            <div id="cep-alert"></div>
+                            <iframe
+                                src="https://maps.google.com/maps?hl=pt-br&amp;ie=UTF8&amp;output=embed&amp;q=mercado"
+                                id="maps-iframe"
+                            ></iframe>
+                        </div>
+                    </article>
+
+                    <article class="simple-article">
+                        <figure class="article-image">
+                            <img
+                                src="./assets/imgs/arranging-files.png"
+                                alt="Na palma da mão"
+                            />
+                        </figure>
+
+                        <div class="article-textbox">
+                            <h2 class="article-title">
+                                <span>Tudo</span> na palma da sua mão
+                            </h2>
+                            <p>
+                                Cadastre-se e <span>otimize seu tempo</span> na
+                                hora de fazer suas compras.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="contact-section">
+                <div class="container">
+                    <article id="contact-article">
+                        <div class="article-textbox">
+                            <h2 class="article-title">
+                                Entre em <span>contato</span> conosco!
+                            </h2>
+                            <p>
+                                Se você tiver alguma dúvida ou apenas deseja se
+                                conectar, adoraríamos ouvir de você. Aproveite
+                                para nos seguir nas redes sociais.
+                            </p>
+
+                            <ul id="contact-links">
+                                <li>
+                                    <a
+                                        href="tel:+5561999999999"
+                                        target="_blank"
+                                    >
+                                        <img
+                                            src="./assets/icons/png/telephone.png"
+                                            alt="Ícone telefone"
+                                            title="Ligação"
+                                        />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="mailto:contato@mercarrin.com"
+                                        target="_blank"
+                                    >
+                                        <img
+                                            src="./assets/icons/png/email.png"
+                                            alt="Ícone email"
+                                            title="Email"
+                                        />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://wa.me/5561999999999"
+                                        target="_blank"
+                                    >
+                                        <img
+                                            src="./assets/icons/png/whatsapp.png"
+                                            alt="Ícone whatsapp"
+                                            title="Whatsapp"
+                                        />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://twitter.com"
+                                        target="_blank"
+                                    >
+                                        <img
+                                            src="./assets/icons/png/twitter.png"
+                                            alt="Ícone twitter"
+                                            title="Twitter"
+                                        />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://instagram.com"
+                                        target="_blank"
+                                    >
+                                        <img
+                                            src="./assets/icons/png/instagram.png"
+                                            alt="Ícone instagram"
+                                            title="Instagram"
+                                        />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <form id="contact-form">
+                            <input
+                                type="text"
+                                class="form-input"
+                                id="name"
+                                name="name"
+                                placeholder="Nome"
+                            />
+                            <input
+                                type="email"
+                                class="form-input"
+                                id="email"
+                                name="email"
+                                placeholder="Email"
+                            />
+                            <input
+                                type="text"
+                                class="form-input"
+                                id="phone"
+                                name="phone"
+                                pattern="\(\d{2}\) \d{5}-\d{4}"
+                                maxlength="15"
+                                placeholder="Telefone"
+                            />
+                            <textarea
+                                class="form-input"
+                                id="message"
+                                name="message"
+                                rows="5"
+                                placeholder="Mensagem"
+                            ></textarea>
+                            <input
+                                type="submit"
+                                class="button fill"
+                                value="Enviar"
+                            />
+                            <div id="contact-message"></div>
+                        </form>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <p>
+                    Feito com
+                    <img
+                        src="./assets/icons/png/heart.png"
+                        alt="Ícone de coração"
+                        id="heart-icon"
+                    />
+                </p>
+
+                <!-- Links para as fontes das imagens usadas na página -->
+                <details id="attributions">
+                    <summary>Fontes das imagens</summary>
+                    <ul>
+                        <li>
+                            Ícones:
+                            <a href="https://www.freepik.com" target="_blank">
+                                Freepik
+                            </a>
+                            em
+                            <a href="https://www.flaticon.com/" target="_blank">
+                                flaticon.com
+                            </a>
+                        </li>
+                        <li>
+                            Imagens:
+                            <a
+                                href="https://iconscout.com/contributors/manypixels-gallery"
+                                target="_blank"
+                                >Manypixels Gallery</a
+                            >
+                            em
+                            <a
+                                href="https://www.iconscout.com/"
+                                target="_blank"
+                            >
+                                iconscout.com
+                            </a>
+                        </li>
+                    </ul>
+                </details>
+
+                <p>&copy; 2022 Paulo Vitor dos Santos</p>
+            </div>
+        </footer>
+    </body>
+</html>
