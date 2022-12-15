@@ -16,7 +16,7 @@ Planilha no Excel contendo os seguintes conteúdos:
 -   Procs (ProcV, ProcX);
 -   Tabela dinâmica.
 
-## LandingPage [merCarrin](https://paulovitor-unb.github.io/BeAcademy_FromZeroToHero/BeAcademy_FromZeroToHero_ProjetoFinal/LandingPage)
+## LandingPage -> [merCarrin](https://paulovitor-unb.github.io/BeAcademy_FromZeroToHero/BeAcademy_FromZeroToHero_ProjetoFinal/LandingPage)
 
 Landing page usando HTML, CSS e JavaScript abordando os seguintes conteúdos:
 
