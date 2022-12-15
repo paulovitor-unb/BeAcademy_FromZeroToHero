@@ -146,6 +146,7 @@ async function searchCEPAndUpdateMapsIframe(event) {
         removeCEPAlertMessage();
         clearCEPInput();
     } catch (error) {
+        focusInvalidInputOnDesktop(cepInput);
         showCEPAlertMessage(error.message);
     } finally {
         enableCEPSearchButton();
@@ -206,6 +207,10 @@ function clearCEPInput() {
     cepInput.value = "";
 }
 
+function focusInvalidInputOnDesktop(input) {
+    if (window.innerWidth >= 1024) input.focus();
+}
+
 function showCEPAlertMessage(message) {
     cepAlert.classList.add("alert");
     cepAlert.innerText = message;
@@ -251,6 +256,7 @@ function validateInputs() {
 function validateName() {
     const name = nameInput.value;
     if (!name) {
+        focusInvalidInputOnDesktop(nameInput);
         throw Error("Nome não pode ser vazio!");
     }
 }
@@ -259,6 +265,7 @@ function validateEmail() {
     const email = emailInput.value;
     const emailPattern = /[^ ]@[^ ]+\.[a-z]{2,3}$/i;
     if (!emailPattern.test(email)) {
+        focusInvalidInputOnDesktop(emailInput);
         throw Error("Email inválido!");
     }
 }
@@ -267,6 +274,7 @@ function validatePhone() {
     const phone = phoneInput.value;
     const phonePattern = /^\(\d{2}\) \d{5}-\d{4}$/;
     if (!phonePattern.test(phone)) {
+        focusInvalidInputOnDesktop(phoneInput);
         throw Error("Telefone inválido!");
     }
 }
@@ -274,6 +282,7 @@ function validatePhone() {
 function validateMessage() {
     const message = messageInput.value;
     if (!message) {
+        focusInvalidInputOnDesktop(messageInput);
         throw Error("Mensagem não pode ser vazia!");
     }
 }
