@@ -40,6 +40,22 @@ if (username) {
 }
 
 /* Manipulação do DOM pela rolagem vertical (scrollY) */
+// Uso do ScrollReveal na versão para computador (desktop)
+ScrollReveal().reveal("article > *:first-child", {
+    delay: 300,
+    distance: "3rem",
+    origin: "left",
+    reset: true,
+    mobile: false,
+});
+ScrollReveal().reveal("article > *:last-child", {
+    delay: 300,
+    distance: "3rem",
+    origin: "right",
+    reset: true,
+    mobile: false,
+});
+
 handleScrollY();
 
 window.addEventListener("scroll", handleScrollY);
