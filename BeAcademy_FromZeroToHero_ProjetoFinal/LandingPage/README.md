@@ -1,4 +1,4 @@
-# LandingPage -> [merCarrin](https://paulovitor-unb.github.io/BeAcademy_FromZeroToHero/BeAcademy_FromZeroToHero_ProjetoFinal/LandingPage)
+# LandingPage -> [merCarrin](https://paulovitor-unb.github.io/BeAcademy_FromZeroToHero/LandingPage)
 
 ## Estrutura de arquivos
 
